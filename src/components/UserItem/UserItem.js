@@ -1,6 +1,8 @@
+import styles from './UserItem.module.css';
+
 const UserItem = (props) => {
   return (
-    <li>{props.name}</li>
+    <li className={styles.UserItem}>{`${props.name} (${props.age} years old)`}</li>
   );
 };
 

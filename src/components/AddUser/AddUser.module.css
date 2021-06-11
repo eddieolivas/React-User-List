@@ -1,0 +1,28 @@
+.AddUser label {
+  display: block;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.AddUser input {
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding: 8px;
+  width: 100%;
+}
+
+.AddUser button {
+  background: purple;
+  border: 1px solid purple;
+  color: #fff;
+  margin: 10px 0;
+  max-width: 100px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.AddUser input[type="submit"]:hover {
+  background: white;
+  color: purple;
+  cursor: pointer;
+}
