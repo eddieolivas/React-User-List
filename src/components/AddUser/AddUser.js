@@ -50,11 +50,11 @@ const AddUser = (props) => {
           : 'Please enter a valid age. (> 0)'}
       </Modal>
       <form className={styles.AddUser} onSubmit={formSubmitHandler}>
-        <label>Username</label>
-        <input value={userName} type="text" onChange={userNameChangeHandler} />
+        <label htmlFor="username">Username</label>
+        <input id="username" value={userName} type="text" onChange={userNameChangeHandler} />
 
-        <label>Age (Years)</label>
-        <input value={userAge} type="number" onChange={userAgeChangeHandler} />
+        <label htmlFor="age">Age (Years)</label>
+        <input id="age" value={userAge} type="number" onChange={userAgeChangeHandler} />
 
         <button type="submit">Add User</button>
       </form>

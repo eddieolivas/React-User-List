@@ -1,5 +1,8 @@
+.App {
+  padding: 0 1em;
+}
+
 .App h1 {
   color: #fff;
-  padding: 0 1em;
   text-align: center;
 }
