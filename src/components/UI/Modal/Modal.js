@@ -1,23 +1,24 @@
 import styles from './Modal.module.css';
 import BackDrop from '../BackDrop/BackDrop';
+import Button from '../Button/Button';
 
 const Modal = (props) => {
   return (
     <>
-      <BackDrop show={props.show} clicked={props.modalClosed} />
+      <BackDrop clicked={props.modalClosed} />
       <div
         className={styles.Modal}
         style={{
-          transform: props.show ? 'translateY(0)' : 'translateY(-100vh)',
-          opacity: props.show ? '1' : '0'
+          transform: 'translateY(0)',
+          opacity: '1'
         }}>
           <div className={styles.ModalHeader}>
-            <h2>Invalid Input</h2>
+            <h2>{props.title}</h2>
           </div>
           <div className={styles.ModalBody}>
-            <p>{props.children}</p>
+            <p>{props.message}</p>
             <div className={styles.ModalButton}>
-              <button onClick={props.modalClosed}>Okay</button>
+              <Button clicked={props.modalClosed}>Okay</Button>
              </div>
           </div>
       </div>
