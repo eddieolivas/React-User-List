@@ -5,7 +5,6 @@ import Card from './components/UI/Card/Card';
 import AddUser from './components/AddUser/AddUser';
 import UserList from './components/UserList/UserList';
 
-
 function App() {
   const [users, setUsers] = useState([
     {

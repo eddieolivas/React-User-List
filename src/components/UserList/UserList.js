@@ -1,5 +1,4 @@
 import UserItem from '../UserItem/UserItem';
-import Card from '../UI/Card/Card';
 import styles from './UserList.module.css';
 
 const UserList = (props) => {
